@@ -1,0 +1,117 @@
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9f9f9f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+}
+
+body {
+    background-color: black;
+}
+
+h1, h2, table, ul, form, span, p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+img {
+    width: 22vw;
+    height: 18vh;
+    border-radius: 3px;
+    transition: box-shadow 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+img {
+    transition-timing-function: cubic-bezier(0.68, -1, 0.27, 2);
+}
+
+img:hover {
+    box-shadow: 0 4px 12px rgb(0,255,0);
+    width: 25vw;
+    height: 20vh;
+}
+
+figcaption {
+    width: 100%;
+}
+
+header {
+    width: 98vw;
+    height: 10.5vh;
+    background: rgb(0,255,0);
+    background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,255,255,1) 50%, rgba(0,0,255,1) 100%);
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+h2 {
+    text-align: center;
+    margin: 3vh;
+    background: linear-gradient(to top, yellow, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.dis {
+    text-align: center;
+    color: rgb(0,255,0);
+}
+
+.game {
+    display: inline-block;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 27vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+hr {
+    height: 0.5vh;
+    background-color: white;
+    border-radius: 100px;
+}
+
+footer {
+    background: linear-gradient(to bottom, black, rgb(0,255,0));
+    width: 99vw;
+    height: 13vh;
+}
+
+footer p {
+    margin-left: 0.5vw;
+}

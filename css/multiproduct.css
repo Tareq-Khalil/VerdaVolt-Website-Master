@@ -1,0 +1,41 @@
+.container1{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom: 30px;
+}
+.container2{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.child{
+    margin:10px;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+    width: 30%;
+}
+.child:hover {
+    transform: translateY(-10px);
+}
+img{
+    border-radius: 15px;
+    width:80%;
+    height: 90%;
+}
+h1{
+    text-align:center;
+    margin-top: 100px;
+}
+.footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}

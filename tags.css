@@ -1,0 +1,67 @@
+.tags {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.tag {
+  padding: 0.2em 0.7em;
+  border-radius: 1em;
+  font-size: 0.7em;
+  user-select: none;
+}
+
+.tag.tag-game {
+  background: #64db64;
+  color: #000000;
+}
+
+.tag.tag-collab {
+  background: #64c3db;
+  color: #000000;
+}
+
+.tag.tag-extension {
+  background: #b33e3a;
+  color: #ffffff;
+}
+
+.tag.tag-hackathon {
+  background: #881bb3;
+  color: #ffffff;
+}
+
+.tag.tag-cs {
+  background: #d1ce11;
+  color: #000000;
+}
+
+.tag.tag-ml {
+  background: #ff8888;
+  color: #000000;
+}
+
+.tag.tag-lowlevel {
+  background: #18b997;
+  color: #000000;
+}
+
+.tag.tag-website {
+  background: #f09d20;
+  color: #000000;
+}
+
+.tag.tag-engineering {
+  background: #5018b9;
+  color: #ffffff;
+}
+
+.tag.tag-3d {
+  background: #c91f96;
+  color: #ffffff;
+}
+
+.tag.tag-app {
+  background: #2aa9fd;
+  color: #ffffff;
+}
