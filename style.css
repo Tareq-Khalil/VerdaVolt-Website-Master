@@ -281,7 +281,10 @@ p a:hover::after {
   width: 100%;
   display: flex;
   white-space: nowrap;
+  height: 80px;
+  
 }
+
 
 .navbar a {
   float: left;
@@ -295,6 +298,84 @@ p a:hover::after {
   transition: 0.12s;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(156, 255, 44);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Fix dropdown on hover */
+.custom-dropdown:hover .custom-dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Ensure dropdown toggle has no caret from Bootstrap */
+.custom-dropdown > a::after {
+  display: none;
+}
+
+/* Styling for dropdown menu */
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Bellota Text", sans-serif;
+}
+
+.custom-dropdown-menu a:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /* .navbar a:hover {
   background: #ddd;
   color: #020202;
@@ -670,7 +751,8 @@ nav.navbar .navbar-brand {
 }
 
 nav.navbar .navbar-brand img {
-  height: 55px;
+  height: 60px;
+  width: 60px
 }
 
 nav .navbar-nav .nav-link {
@@ -713,22 +795,16 @@ nav .navbar-nav .nav-link.active:hover {
   transform: scale(1.05);
 }
 
-.what-is-a-hacker p {
-  text-align: justify;
-}
+
 
 .my-bg {
   margin-top: 5rem;
   background-color: #0b0e14;
 }
 
-.home-body {
-  background: url("assets/imgs/hacker.jpg");
-  background-attachment: fixed;
-}
 
 .footer-container {
-  background: #0b0e14 url("assets/imgs/pattern.svg");
+  background: #0b0e14 url("");
 }
 
 footer ul li {

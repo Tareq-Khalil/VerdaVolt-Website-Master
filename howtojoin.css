@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .hero {
+    height: 85vh;
+    background-image: linear-gradient(32deg, rgb(94, 242, 244) 0%, rgb(35, 173, 4) 64%, rgb(11, 230, 149) 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+    position: relative;
+    font-family: "Phantom Sans";
+  }
+  
+  .hero .myquote {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10rem;
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+  
+  .hero .myquote span {
+    display: block;
+  }
+  
+  .hero .myquote span:nth-child(1) {
+    margin-left: -10rem;
+  }
+  .hero .myquote span:nth-child(2) {
+    margin-left: -5rem;
+  }
+  .hero .myquote span:nth-child(3) {
+    margin-left: 0rem;
+  }
+  .hero .myquote span:nth-child(4) {
+    margin-left: 20rem;
+    position: relative;
+  }
+  
+  .hero .myquote span:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    background-color: rgba(252, 252, 252, 0.625);
+    mix-blend-mode: overlay;
+    right: -0.5rem;
+    width: 21.85rem;
+    height: 5.75rem;
+  }
+  
+  .hero .title {
+    position: absolute;
+    background-color: #0b0e14;
+    bottom: -4rem;
+    left: 10rem;
+    color: white;
+    /* mix-blend-mode: screen; */
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(3deg);
+  }
+  
+  .hero .title h1 {
+    font-size: 0.9rem !important;
+    padding-top: 2rem;
+  }
+  
+  .hero .title span {
+    font-size: 1.2rem !important;
+  }
+  
+  @media(max-width:768px) {
+    .hero .myquote span:nth-child(1) {
+      margin-left: 0rem;
+    }
+    .hero .myquote span:nth-child(2) {
+      margin-left: 0rem;
+    }
+    .hero .myquote span:nth-child(3) {
+      margin-left: 0rem;
+    }
+    .hero .myquote span:nth-child(4) {
+      margin-left: 0rem;
+      position: relative;
+    }
+  
+    .hero .myquote {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 0rem;
+      font-size: 5rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+  
+    .hero .myquote span:nth-child(4)::before {
+      
+      right: 2.5rem;
+      width: 18.85rem;
+      height: 5.75rem;
+    }
+    .hero .title {
+      transform: rotate(9deg);
+    }
+  
+    .icons{
+      justify-content: center;
+    }
+  
+  }
+  
+  @media (max-width: 400px){
+    .hero .myquote {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 0rem;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    .hero .myquote span:nth-child(4)::before {
+      right: 2.5rem;
+      width: 18.85rem;
+      height: 5.75rem;
+    }
+    .hero .title {
+      transform: rotate(9deg);
+    }
+    .icons{
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 390px){
+    .hero .myquote {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 0rem;
+      font-size: 4.2rem;
+      line-height: 1;
+      text-align: center;
+      margin: 0 4px;
+    }
+    .hero .myquote span:nth-child(4)::before {
+      right: 2.5rem;
+      width: 15.85rem;
+      height: 3.75rem;
+    }
+    .hero .title {
+      transform: rotate(9deg);
+    }
+    .icons{
+      justify-content: center;
+    }
+    .hero .title {
+      position: absolute;
+      background-color: #0b0e14;
+      bottom: -6rem;
+      left: 9rem;
+      color: white;
+      /* mix-blend-mode: screen; */
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      text-align: center;
+  }
+  
+  @media (max-width:300px){
+    .hero .myquote span:nth-child(4)::before {
+      right: 0.5rem;
+      width: 13.85rem;
+      height: 3.75rem;
+    }
+    .hero .title {
+      position: absolute;
+      background-color: #0b0e14;
+      bottom: -2rem;
+      left: 8rem;
+      color: white;
+      /* mix-blend-mode: screen; */
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      text-align: center;
+    }
+    .hero .title {
+      transform: rotate(12deg);
+    }
+    .hero .title h1 {
+      font-size: 0.7rem !important;
+      padding-top: 2rem;
+    }
+  }
+}
