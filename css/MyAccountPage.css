@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+.MyAccountPage {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    margin-right: 50vh;
+    
+    z-index: 9999999;
+}
+
+
+.MyAccountPage-visible {
+    display: flex;
+}
+
+.MyAccountPage .container {
+    height: 85vh;
+    background-color: black;
+}
+#AccountInformations .Informations{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#AccountElements ul li:hover{
+    background-color: #81b8d3; 
+    transition: 1.5s ease-in;  
+}
+
+
+#UserPage{
+    background-color:#eebe97e5;
+}
+#MyAccountPageClose {
+    color: black;
+    cursor: pointer;
+    z-index: 999999;
+    display: flex;
+    position: fixed;
+    margin-left: 155vh;
+    margin-top: 2vh;
+}
+
+.accountInformations{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+
+.MyAccountPage * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif
+}
+
+.MyAccountPage body {
+    background-color:
+        #b064f7;
+    line-height: 1rem;
+    font-size: 14px;
+    padding: 10px
+}
+
+
+.MyAccountPage .container {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #eee
+}
+
+.MyAccountPage .navbar-brand {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800
+}
+
+.MyAccountPage nav {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: white
+}
+
+.MyAccountPage .order .card {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1)
+}
+.MyAccountPage .MyAccountItems{
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.MyAccountPage .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute
+}
+
+.MyAccountPage .ribbon::before,
+.MyAccountPage .ribbon::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border: 5px solid red
+}
+
+.MyAccountPage .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: red;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center
+}
+
+.MyAccountPage .ribbon-top-right {
+    top: -12px;
+    right: -12px
+}
+
+.MyAccountPage .ribbon-top-right::before,
+.MyAccountPage .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent
+}
+
+.MyAccountPage .ribbon-top-right::before {
+    top: 0;
+    left: 0
+}
+
+.MyAccountPage .ribbon-top-right::after {
+    bottom: 0;
+    right: 0
+}
+
+.MyAccountPage .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg)
+}
+
+.MyAccountPage small {
+    font-size: 12px
+}
+
+.MyAccountPage .cart {
+    line-height: 1
+}
+
+.MyAccountPage .icon {
+    background-color: #eee;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+}
+
+.MyAccountPage .pic {
+    width: 70px;
+    height: 90px;
+    border-radius: 5px
+}
+
+.MyAccountPage td {
+    vertical-align: middle
+}
+
+.MyAccountPage .red {
+    color: #fd1c1c;
+    font-weight: 600
+}
+
+.MyAccountPage .b-bottom {
+    border-bottom: 2px dotted black;
+    padding-bottom: 20px
+}
+
+.MyAccountPage p {
+    margin: 0px
+}
+
+.MyAccountPage table input {
+    width: 40px;
+    border: 1px solid #eee
+}
+
+.MyAccountPage input:focus {
+    border: 1px solid #eee;
+    outline: none
+}
+
+.MyAccountPage .round {
+    background-color: #eee;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.MyAccountPage .payment-summary .unregistered {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+.MyAccountPage .payment-summary input {
+    width: 100%;
+    margin-right: 20px
+}
+
+.MyAccountPage .payment-summary .sale {
+    width: 100%;
+    background-color: #e9b3b3;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5PX 0
+}
+
+.MyAccountPage .red {
+    color: #fd1c1c
+}
+
+.MyAccountPage .del {
+    width: 35px;
+    height: 35px;
+    object-fit: cover
+}
+
+.MyAccountPage .delivery .card {
+    padding: 10px 5px
+}
+
+.MyAccountPage .option {
+    position: relative;
+    top: 50%;
+    display: block;
+    cursor: pointer;
+    color: #888
+}
+
+.MyAccountPage .option input {
+    display: none
+}
+
+.MyAccountPage .checkmark {
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%
+}
+
+.MyAccountPage .option input:checked~.checkmark:after {
+    display: block
+}
+
+.MyAccountPage .option .checkmark:after {
+    content: "\2713";
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out 0s
+}
+
+.MyAccountPage .option:hover input[type="radio"]~.checkmark {
+    background-color: #f4f4f4
+}
+
+.MyAccountPage .option input[type="radio"]:checked~.checkmark {
+    background: #ac1f32;
+    color: #fff;
+    transition: 300ms ease-in-out 0s
+}
+
+.MyAccountPage .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1);
+    color: #fff
+}
+

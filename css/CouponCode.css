@@ -1,0 +1,51 @@
+.CouponMain{
+    float: right;
+    height: 50px;
+    margin: 5;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.CouponInnerDiv{
+    background: #F4A460;
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 13%);
+    transition: all 0.5s ease-in-out;
+    cursor:pointer;
+    
+
+}
+
+.CouponInnerDiv:hover{
+    clip-path: circle(70%);
+    background: #db904e;
+}
+
+#CouponSpan{
+    float: right;
+    color: white;
+    font-weight: bold;
+    transition: color 0.5s;
+    position: relative;
+   
+}
+
+#CouponSpan:hover{
+    color: rgba(255, 255, 255, 0);
+}
+
+.CouponDiv h1{
+    color: white;
+    margin: 0;
+}
+
+.CouponDiv p{
+    color: white;
+    font-size: 0.8rem;
+}
+

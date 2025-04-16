@@ -1,0 +1,18 @@
+.donate-btn{
+    padding: .5%;
+    background-color: rgb(30, 64, 160);
+    font-size: 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #231709;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.donate-btn:hover{
+    transform: scale(1.25);
+    box-shadow: 0 0 20px #fff;
+}
+.food-grid-donate-btn{
+    margin-top: 5%;
+}
