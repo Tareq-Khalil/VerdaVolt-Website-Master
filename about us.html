@@ -12,7 +12,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="contact.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+ .hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Optional: allows wrapping on small screens */
+}
 
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+</style>
   </head>
 
   <body>
@@ -57,12 +77,23 @@
         </div>
       </nav>
     
-    <div id="main1" class="pb-5">
-      <div class="hero">
-        <p class="display-1 fw-bold">Our SDG Goals</p>
-        <p class="fs-4 w-50 words">We are committed to the UN Sustainable Development Goals, with a strong focus on Climate Action by creating innovative green energy solutions and spreading awareness about climate change. We are building Partnerships for the Goals with global leaders in renewable energy to drive impactful collaboration. We are also promoting Decent Work and Economic Growth by empowering individuals through our sustainable marketplace and creating new job opportunities in the green economy.</p>
-       <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4b92095a46165eacf35fd43c62f4edad3a389ab1_whatsapp_image_2025-05-02_at_20.31.53_cd07a646.jpg" alt="" style="float: right; width: 400px; margin-left: 750px;">
-      </div>
+<div id="main1" class="pb-5">
+  <div class="hero">
+    <div class="hero-text">
+      <p class="display-1 fw-bold">Our SDG Goals</p>
+      <p class="fs-4 words">
+        We are committed to the UN Sustainable Development Goals, with a strong focus on Climate Action by creating innovative green energy solutions and spreading awareness about climate change.
+        We are building Partnerships for the Goals with global leaders in renewable energy to drive impactful collaboration.
+        We are also promoting Decent Work and Economic Growth by empowering individuals through our sustainable marketplace and creating new job opportunities in the green economy.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4b92095a46165eacf35fd43c62f4edad3a389ab1_whatsapp_image_2025-05-02_at_20.31.53_cd07a646.jpg" 
+           alt="SDG Icon">
+    </div>
+  </div>
+</div>
+
 
       <div class="content join">
         <!-- <h1 class="welcome">Don't hesitate to contact us!</h1>
